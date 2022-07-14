@@ -39,7 +39,7 @@ function ltebandselection()
     }
     else var band = arguments[0];
    
-    if(!window.location.href.includes("/html/home.html"))
+    if(!window.location.href.includes("/html/content.html#home"))
     {
         alert("You can use this function only in main page.");
         return;
@@ -67,7 +67,7 @@ function ltebandselection()
         $.ajax({
             type:"GET",
             async : true,
-            url: '/html/home.html',
+            url: '/html/content.html#home',
             error:function(request,status,error){
                 alert("Token Error:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
                },            
